@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('/images/pattern-background-desktop.svg');
+}
+
+#container{
+    width: 30%;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+#order-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display';
+}
+
+#hero-img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+#para{
+    width: 72%;
+    margin: 15px 0 20px 0;
+}
+
+#para p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: hsl(226, 16%, 58%);
+    font-family: 'Red Hat Display';
+}
+
+#payment{
+    width: 80%;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+    font-family: 'Red Hat Display';
+    background-color: hsl(245, 69%, 42%);
+}
+
+#payment:hover{
+    cursor: pointer;
+    background-color: hsl(224, 35%, 61%);
+}
+
+#order-charges{
+    width: 80%;
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+#order-charges img{
+    margin: 0 20px;
+}
+
+#order-charges a,
+#order-charges a:visited{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 20px 0 auto;
+    color: hsl(245, 69%, 42%);
+    font-family: 'Red Hat Display';
+}
+
+#order-charges a:hover{
+    color: hsl(224, 35%, 61%);
+    text-decoration: none;
+}
+
+#plan{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Red Hat Display';
+}
+
+#plan #head{
+    font-weight: 800;
+    color: hsl(223, 47%, 23%);
+}
+
+#plan #price{
+    color: hsl(224, 23%, 55%);
+}
+
+#Cancel{
+    height: 40px;
+    font-weight: 700;
+    color: hsl(223, 37%, 32%);
+    font-family: 'Red Hat Display';
+}
+
+#Cancel:hover{
+    cursor: pointer;
+    color: hsl(223, 49%, 19%);
+}
+
+@media (max-width:375px) {
+    body{
+        height: 120vh;
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+        background-image: url('/images/pattern-background-mobile.svg');
+    }
+    #container{
+        width: 90%;
+    }
+    #para{
+        width: 78%;
+    }
+    #order-charges{
+        width: 90%;
+    }
+}
